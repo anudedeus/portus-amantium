@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portus Amantium</title>
+    <style>
+        :root {
+            --primary: #FF385C; /* Cor estilo Airbnb */
+            --dark: #222222;
+            --light: #F7F7F7;
+            --gray: #717171;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            color: var(--dark);
+            background-color: #ffffff;
+            padding: 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Header Hero */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #FFF0F2 0%, #FFE4E7 100%);
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .hero h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+        .hero p {
+            color: var(--gray);
+            font-size: 1rem;
+            margin-bottom: 24px;
+        }
+        .btn-airbnb {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 10px rgba(255, 56, 92, 0.3);
+        }
+        .btn-airbnb:hover {
+            transform: scale(1.02);
+            background-color: #E61E43;
+        }
+        /* Seções */
+        .section {
+            margin-bottom: 32px;
+        }
+        .section h2 {
+            font-size: 1.4rem;
+            border-bottom: 2px solid #EAEAEA;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+        .section p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #484848;
+            margin-bottom: 16px;
+        }
+        .highlight-box {
+            background-color: #EAF7ED;
+            color: #1E6B34;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        /* Grid de Itens */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .grid-item {
+            background-color: var(--light);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid #EAEAEA;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .grid-item::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>PORTUS AMANTIUM</h1>
+            <h2>Um apartamento novo no coração da Cidade Baixa</h2>
+            <p>Porto Alegre · RS</p>
+            <!-- Substitua o # pelo link real do seu anúncio do Airbnb -->
+            <a href="https://www.airbnb.co.uk/rooms/1671226506703294745?guests=1&adults=1&s=67&unique_share_id=3b9b11a9-25d7-4189-a700-57a0ddabf35b" target="_blank" class="btn-airbnb">RESERVAR PELO AIRBNB</a>
+        </header>
+
+        <!-- O Apartamento -->
+        <section class="section">
+            <h2>O APARTAMENTO</h2>
+            <p>Um espaço moderno, confortável e muito bem localizado na Cidade Baixa, próximo a supermercados, restaurantes, bares, UFRGS, Parque da Redenção e Santa Casa.</p>
+            <div class="highlight-box">🚗 Garagem privativa incluída</div>
+            <p><strong>Capacidade:</strong> Até 3 hóspedes · Sala e Smart TV · 1 quarto · 2 camas · 1,5 banheiro</p>
+        </section>
+
+        <!-- Conforto -->
+        <section class="section">
+            <h2>CONFORTO</h2>
+            <div class="grid">
+                <div class="grid-item">Cama queen-size</div>
+                <div class="grid-item">Smart TV 40” com Netflix</div>
+                <div class="grid-item">Ar-condicionado</div>
+                <div class="grid-item">Wi-Fi premium</div>
+                <div class="grid-item">Cozinha equipada</div>
+            </div>
+        </section>
+
+        <!-- Estrutura -->
+        <section class="section">
+            <h2>ESTRUTURA DO CONDOMÍNIO</h2>
+            <div class="grid">
+                <div class="grid-item">Piscina no rooftop</div>
+                <div class="grid-item">Academia moderna</div>
+                <div class="grid-item">Área gourmet</div>
+                <div class="grid-item">Lavanderia interna</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
