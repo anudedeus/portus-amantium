@@ -1,223 +1,385 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Portus Amantium</title>
-<style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#26332e;background:#f8f6f1}
-.hero{min-height:72vh;background-image:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.38)),url('images/cozinha_entrada.jpg');background-size:cover;background-position:center;}
-.hero-inner{padding:56px 7%;color:white;max-width:760px}
-h1{font-size:clamp(42px,7vw,78px);letter-spacing:3px;margin:0 0 10px}
-h2{font-size:34px;margin:0 0 18px;color:#27463e}
-p{font-size:18px;line-height:1.65}
-.btn{display:inline-block;margin-top:16px;padding:14px 22px;background:#b66b4b;color:white;text-decoration:none;border-radius:4px;font-weight:bold}
-.section{padding:70px 7%;max-width:1100px;margin:auto}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
-.photo{width:100%;height:360px;object-fit:cover;border-radius:4px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.feature{background:white;padding:22px;border:1px solid #e5e0d8}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery img{width:100%;height:230px;object-fit:cover;border-radius:3px}
-.center{text-align:center}
-footer{background:#243b35;color:white;padding:42px 7%;text-align:center}
-@media(max-width:700px){.two,.features,.gallery{grid-template-columns:1fr}.hero{min-height:65vh}.section{padding:48px 6%}}
-</style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Portus Amantium</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #26332e;
+            background: #f8f6f1
+        }
+
+        .hero {
+            min-height: 72vh;
+            background-image: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .38)), url('images/cozinha_entrada.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-inner {
+            padding: 56px 7%;
+            color: white;
+            max-width: 760px
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            letter-spacing: 3px;
+            margin: 0 0 10px
+        }
+
+        h2 {
+            font-size: 34px;
+            margin: 0 0 18px;
+            color: #27463e
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.65
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 14px 22px;
+            background: #b66b4b;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold
+        }
+
+        .section {
+            padding: 70px 7%;
+            max-width: 1100px;
+            margin: auto
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 38px;
+            align-items: center
+        }
+
+        .photo {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 4px
+        }
+
+        .map-embed {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px
+        }
+
+        .feature {
+            background: white;
+            padding: 22px;
+            border: 1px solid #e5e0d8
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 3px
+        }
+
+        .center {
+            text-align: center
+        }
+
+        footer {
+            background: #243b35;
+            color: white;
+            padding: 42px 7%;
+            text-align: center
+        }
+
+        @media(max-width:700px) {
+
+            .two,
+            .features,
+            .gallery {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                min-height: 65vh
+            }
+
+            .section {
+                padding: 48px 6%
+            }
+        }
+    </style>
 </head>
+
 <body>
-<section class="hero">
-<div class="hero-inner">
-<h1>PORTUS AMANTIUM</h1>
-<p>Um apartamento novo no coração da Cidade Baixa</p>
-<p>Porto Alegre · RS</p>
-<a class="btn" href="https://www.airbnb.co.uk/rooms/1671226506703294745?guests=1&amp;adults=1&amp;s=67&amp;unique_share_id=3b9b11a9-25d7-4189-a700-57a0ddabf35b">RESERVAR PELO AIRBNB</a>
-</div>
-<!-- Bloco com texto em itálico e espaçamento abaixo e à direita -->
-<div style="display: flex; flex-direction: column; width: 100%;">
-<div style="align-self: flex-end; max-width: 450px; margin: 24px 20px 40px 0; padding: 16px; background-color: #fdfdfd; border-right: 4px solid #FF385C; text-align: right; box-shadow: -2px 2px 10px rgba(0,0,0,0.04); border-radius: 8px 0 0 8px;">
-<h3 style="font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: bold; color: #222222; margin: 0 0 2px 0; letter-spacing: 0.5px;">Por·tus A·man·ti·um</h3>
-<p style="font-family: 'Georgia', serif; font-style: italic; color: #717171; font-size: 0.85rem; margin: 0 0 12px 0;">(loc. lat.)</p>
-<ol style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 0; list-style-type: none; color: #333333; line-height: 1.5; font-size: 0.95rem; font-style: italic;">
-<li style="margin-bottom: 8px;"><strong>1.</strong> Tradução literal do latim para <em>Porto dos Amantes</em> ou <em>Porto dos Casais</em>.</li>
-<li style="margin-bottom: 8px;"><strong>2.</strong> Homenagem poética e histórica às origens de Porto Alegre.</li>
-<li><strong>3.</strong> Lugar de acolhimento e afeto no coração da Cidade Baixa.</li>
-</ol>
-</div>
-</div>
-</section>
-<section class="section two">
-<div>
-<h2>O APARTAMENTO</h2>
-<p>Um espaço moderno, confortável e muito bem localizado na Cidade Baixa, próximo a supermercados, restaurantes, bares, UFRGS, Parque da Redenção e Santa Casa.</p>
-<p><strong>Garagem privativa incluída.</strong><br/>Até 3 hóspedes.</p>
-</div>
-<img alt="Sala" class="photo" src="images/sala_1.jpg"/>
-</section>
-<section class="section">
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>PORTUS AMANTIUM</h1>
+            <p>Um apartamento novo no coração da Cidade Baixa</p>
+            <p>Porto Alegre · RS</p>
+            <a class="btn"
+                href="https://www.airbnb.co.uk/rooms/1671226506703294745?guests=1&amp;adults=1&amp;s=67&amp;unique_share_id=3b9b11a9-25d7-4189-a700-57a0ddabf35b">RESERVAR
+                PELO AIRBNB</a>
+        </div>
+        <!-- Bloco com texto em itálico e espaçamento abaixo e à direita -->
+        <div style="display: flex; flex-direction: column; width: 100%;">
+            <div
+                style="align-self: flex-end; max-width: 450px; margin: 24px 20px 40px 0; padding: 16px; background-color: #fdfdfd; border-right: 4px solid #FF385C; text-align: right; box-shadow: -2px 2px 10px rgba(0,0,0,0.04); border-radius: 8px 0 0 8px;">
+                <h3
+                    style="font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: bold; color: #222222; margin: 0 0 2px 0; letter-spacing: 0.5px;">
+                    Por·tus A·man·ti·um</h3>
+                <p
+                    style="font-family: 'Georgia', serif; font-style: italic; color: #717171; font-size: 0.85rem; margin: 0 0 12px 0;">
+                    (loc. lat.)</p>
+                <ol
+                    style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 0; list-style-type: none; color: #333333; line-height: 1.5; font-size: 0.95rem; font-style: italic;">
+                    <li style="margin-bottom: 8px;"><strong>1.</strong> Tradução literal do latim para <em>Porto dos
+                            Amantes</em> ou <em>Porto dos Casais</em>.</li>
+                    <li style="margin-bottom: 8px;"><strong>2.</strong> Homenagem poética e histórica às origens de
+                        Porto Alegre.</li>
+                    <li><strong>3.</strong> Lugar de acolhimento e afeto no coração da Cidade Baixa.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="section two">
+        <div>
+            <h2>O APARTAMENTO</h2>
+            <p>Um espaço moderno, confortável e muito bem localizado na Cidade Baixa, próximo a supermercados,
+                restaurantes, bares, UFRGS, Parque da Redenção e Santa Casa.</p>
+            <p><strong>Garagem privativa incluída.</strong><br />Até 3 hóspedes.</p>
+        </div>
+        <img alt="Sala" class="photo" src="images/sala_1.jpg" />
+    </section>
+    <section class="section">
 
-<div class="gallery">
-<img alt="Cozinha" class="" src="images/cozinha_1.jpg"/><img alt="Sala e Smart TV" class="" src="images/sala_2.jpg"/><img alt="Quarto" class="" src="images/quarto_1.jpg"/><img alt="Banheiro" class="" src="images/banheiro_1.jpg"/><img alt="Lavabo" class="" src="images/lavabo_1.jpg"/><img alt="Box privativo" class="" src="images/garagem_1.jpg"/>
-</div>
-</section>
+        <div class="gallery">
+            <img alt="Cozinha" class="" src="images/cozinha_1.jpg" /><img alt="Sala e Smart TV" class=""
+                src="images/sala_2.jpg" /><img alt="Quarto" class="" src="images/quarto_1.jpg" /><img alt="Banheiro"
+                class="" src="images/banheiro_1.jpg" /><img alt="Lavabo" class="" src="images/lavabo_1.jpg" /><img
+                alt="Box privativo" class="" src="images/garagem_1.jpg" />
+        </div>
+    </section>
 
-<section class="section">
-<h2>CONFORTO</h2>
-<div class="features">
-<div class="feature">1 quarto · cama queen-size <br>sala · sofá-cama</div><div class="feature">1 banheiro<br>1 lavabo</div><div class="feature">Smart TV 40” · canais abertos ·<br>Netflix · Disney+ · Prime Video · Youtube</div><div class="feature">Ar-condicionado<br> frio · quente</div>
-<div class="feature">Wi-Fi · 600 Mbps</div><div class="feature">Cozinha totalmente equipada</div><div class="feature">Cafeteira italiana · suporte para filtro ·<br>máquina de café de cápsulas 3 Corações</div>
-</div>
-</section>
-<section class="section">
-<h2>ESTRUTURA DO CONDOMÍNIO</h2>
-<div class="gallery">
-<img alt="Piscina no terraço" class="" src="images/piscina_1.jpg"/><img alt="Academia" class="" src="images/academia_1.jpg"/><img alt="Espaço convívio" class="" src="images/espaco_convivio_1.jpg"/><img alt="Lavanderia" class="" src="images/lavanderia_1.jpg"/><img alt="Mini-mercado" class="" src="images/mini_mercado_1.jpg"/><img alt="Espaço infantil" class="" src="images/area_infantil_1.jpg"/>
-<img alt="Entrada e áreas externas" class="photo" src="images/patio_1.jpg"/><img alt="Fachada" class="photo" src="images/predio_fachada_1.jpg"/>
-</div>
-</section>
-<section class="section two">
-<div>
-<h2>LOCALIZAÇÃO</h2>
-<p>Rua José do Patrocínio, 527 — Cidade Baixa, Porto Alegre/RS</p>
-<p>Entrada também pela Rua da República, 574</p>
-<p>Uma localização central, próxima a supermercados, restaurantes, bares, UFRGS, Parque da Redenção e Santa Casa.</p>
-</div>
-<!-- <img alt="Entrada e áreas externas" class="photo" src="images/patio_1.jpg"/> -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4317.367768426185!2d-51.22606522357951!3d-30.039886774925886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978ffd18677e1%3A0xd79e59ca23ebff38!2sR.%20Jos%C3%A9%20do%20Patroc%C3%ADnio%2C%20527%20-%20Cidade%20Baixa%2C%20Porto%20Alegre%20-%20RS%2C%2090050-003!5e1!3m2!1sen!2sbr!4v1792521148856!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-</section>
+    <section class="section">
+        <h2>CONFORTO</h2>
+        <div class="features">
+            <div class="feature">1 quarto · cama queen-size <br>sala · sofá-cama</div>
+            <div class="feature">1 banheiro<br>1 lavabo</div>
+            <div class="feature">Smart TV 40” · canais abertos ·<br>Netflix · Disney+ · Prime Video · Youtube</div>
+            <div class="feature">Ar-condicionado<br> frio · quente</div>
+            <div class="feature">Wi-Fi · 600 Mbps</div>
+            <div class="feature">Cozinha totalmente equipada</div>
+            <div class="feature">Cafeteira italiana · suporte para filtro ·<br>máquina de café de cápsulas 3 Corações
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h2>ESTRUTURA DO CONDOMÍNIO</h2>
+        <div class="gallery">
+            <img alt="Piscina no terraço" class="" src="images/piscina_1.jpg" /><img alt="Academia" class=""
+                src="images/academia_1.jpg" /><img alt="Espaço convívio" class=""
+                src="images/espaco_convivio_1.jpg" /><img alt="Lavanderia" class="" src="images/lavanderia_1.jpg" /><img
+                alt="Mini-mercado" class="" src="images/mini_mercado_1.jpg" /><img alt="Espaço infantil" class=""
+                src="images/area_infantil_1.jpg" />
+            <img alt="Entrada e áreas externas" class="photo" src="images/patio_1.jpg" /><img alt="Fachada"
+                class="photo" src="images/predio_fachada_1.jpg" />
+        </div>
+    </section>
+    <section class="section two">
+        <div>
+            <h2>LOCALIZAÇÃO</h2>
+            <p>Rua José do Patrocínio, 527 — Cidade Baixa, Porto Alegre/RS</p>
+            <p>Entrada também pela Rua da República, 574</p>
+            <p>Uma localização central, próxima a supermercados, restaurantes, bares, UFRGS, Parque da Redenção e Santa
+                Casa.</p>
+        </div>
+        <!-- <img alt="Entrada e áreas externas" class="photo" src="images/patio_1.jpg"/> -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4317.367768426185!2d-51.22606522357951!3d-30.039886774925886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978ffd18677e1%3A0xd79e59ca23ebff38!2sR.%20Jos%C3%A9%20do%20Patroc%C3%ADnio%2C%20527%20-%20Cidade%20Baixa%2C%20Porto%20Alegre%20-%20RS%2C%2090050-003!5e1!3m2!1sen!2sbr!4v1792521148856!5m2!1sen!2sbr"
+            class="map-embed" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
 
-<!-- Bloco de Estilo Direto no HTML -->
-<style>
-  .secao-contato {
-    padding: 60px 0;
-    width: 100%;
-    background-color: #fcfcfc;
-  }
-  .site-container-wrapper {
-    max-width: 1100px; 
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  .contato-titulo {
-    font-family: Arial, sans-serif;
-    font-size: 1.8rem;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #222;
-  }
-  .contato-flex-layout {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: flex-start;
-  }
-  .contato-coluna-texto {
-    flex: 1;
-    max-width: 600px;
-  }
-  .contato-coluna-texto h3 {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    color: #333;
-    font-family: Arial, sans-serif;
-  }
-  .contato-coluna-texto p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    font-family: Arial, sans-serif;
-  }
-  .contato-lista-estilo {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .contato-lista-estilo li {
-    margin-bottom: 12px;
-    color: #444;
-  }
-  .contato-lista-estilo li span {
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  .contato-coluna-botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 280px;
-  }
-  .btn-site-novo {
-    display: block;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    font-family: Arial, sans-serif;
-  }
-  .btn-email-preto {
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #222;
-  }
-  .btn-email-preto:hover {
-    background-color: #444;
-  }
-  .btn-maps-vazado {
-    background-color: transparent;
-    color: #222;
-    border: 1px solid #222;
-  }
-  .btn-maps-vazado:hover {
-    background-color: #222;
-    color: #fff;
-  }
-  @media (max-width: 768px) {
-    .contato-flex-layout {
-      flex-direction: column;
-      gap: 30px;
-    }
-    .contato-coluna-botoes {
-      width: 100%;
-    }
-  }
-</style>
+    <!-- Bloco de Estilo Direto no HTML -->
+    <style>
+        .secao-contato {
+            padding: 60px 0;
+            width: 100%;
+            background-color: #fcfcfc;
+        }
+
+        .site-container-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .contato-titulo {
+            font-family: Arial, sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .contato-flex-layout {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .contato-coluna-texto {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .contato-coluna-texto h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .contato-coluna-texto p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-family: Arial, sans-serif;
+        }
+
+        .contato-lista-estilo {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .contato-lista-estilo li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .contato-lista-estilo li span {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .contato-coluna-botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 280px;
+        }
+
+        .btn-site-novo {
+            display: block;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-family: Arial, sans-serif;
+        }
+
+        .btn-email-preto {
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #222;
+        }
+
+        .btn-email-preto:hover {
+            background-color: #444;
+        }
+
+        .btn-maps-vazado {
+            background-color: transparent;
+            color: #222;
+            border: 1px solid #222;
+        }
+
+        .btn-maps-vazado:hover {
+            background-color: #222;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .contato-flex-layout {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .contato-coluna-botoes {
+                width: 100%;
+            }
+        }
+    </style>
 
 
-<section class="section center" style="text-align: left;">
-<h2>RESERVE SUA ESTADA</h2>
-<p>Gostou do Portus Amantium? Consulte disponibilidade e faça sua reserva pelo Airbnb.</p>
-<a class="btn" href="https://www.airbnb.co.uk/rooms/1671226506703294745?guests=1&amp;adults=1&amp;s=67&amp;unique_share_id=3b9b11a9-25d7-4189-a700-57a0ddabf35b">RESERVAR PELO AIRBNB</a>
-</section>
+    <section class="section center" style="text-align: left;">
+        <h2>RESERVE SUA ESTADA</h2>
+        <p>Gostou do Portus Amantium? Consulte disponibilidade e faça sua reserva pelo Airbnb.</p>
+        <a class="btn"
+            href="https://www.airbnb.co.uk/rooms/1671226506703294745?guests=1&amp;adults=1&amp;s=67&amp;unique_share_id=3b9b11a9-25d7-4189-a700-57a0ddabf35b">RESERVAR
+            PELO AIRBNB</a>
+    </section>
 
-<!-- Estrutura da Seção -->
-<section class="secao-contato">
-  <div class="site-container-wrapper"> 
-    <h2 class="contato-titulo">FALE CONOSCO</h2>
-    <div class="contato-flex-layout">
-      <div class="contato-coluna-texto">
-        <h3>Dúvidas sobre sua estada?</h3>
-        <a href="mailto:portusamantium@gmail.com?subject=Informações%20sobre%20possível%20estada" class="btn">
-          ENVIAR E-MAIL
-        </a>
-        <p>Se você tem alguma dúvida sobre a estrutura do apartamento, localização ou deseja combinar algo especial para a sua chegada, estamos à disposição para ajudar.</p>
-        <ul class="contato-lista-estilo">
-          <li><span>1.</span> Respostas em poucas horas.</li>
-          <li><span>2.</span> Atendimento direto com os proprietários.</li>
-          <li><span>3.</span> Dicas locais personalizadas da Cidade Baixa ou de Porto Alegre.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Estrutura da Seção -->
+    <section class="secao-contato">
+        <div class="site-container-wrapper">
+            <h2 class="contato-titulo">FALE CONOSCO</h2>
+            <div class="contato-flex-layout">
+                <div class="contato-coluna-texto">
+                    <h3>Dúvidas sobre sua estada?</h3>
+                    <a href="mailto:portusamantium@gmail.com?subject=Informações%20sobre%20possível%20estada"
+                        class="btn">
+                        ENVIAR E-MAIL
+                    </a>
+                    <p>Se você tem alguma dúvida sobre a estrutura do apartamento, localização ou deseja combinar algo
+                        especial para a sua chegada, estamos à disposição para ajudar.</p>
+                    <ul class="contato-lista-estilo">
+                        <li><span>1.</span> Respostas em poucas horas.</li>
+                        <li><span>2.</span> Atendimento direto com os proprietários.</li>
+                        <li><span>3.</span> Dicas locais personalizadas da Cidade Baixa ou de Porto Alegre.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>PORTUS AMANTIUM<br/><small>Cidade Baixa · Porto Alegre · RS</small></footer>
+    <footer>PORTUS AMANTIUM<br /><small>Cidade Baixa · Porto Alegre · RS</small></footer>
 </body>
+
 </html>
